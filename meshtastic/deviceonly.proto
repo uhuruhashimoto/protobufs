@@ -66,6 +66,11 @@ message DeviceState {
    */
   bool did_gps_reset = 11;
 
+  /*
+  * Stores last sent by info in the nodeDB; used by NeighborInfo module
+  */
+  repeated uint32 last_sent_by_IDs = 12; 
+
 }
 
 /*
