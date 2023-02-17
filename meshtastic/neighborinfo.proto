@@ -22,26 +22,27 @@ message NeighborInfo {
   fixed32 tx_time = 2;
 
   /*
-  * A single edge in the mesh
-  */
-  message Neighbor {
-    /*
-    * Node ID of neighbor
-    */
-    uint32 node_id = 1;
-
-    /*
-    * SNR of last heard message
-    */
-    float snr = 2;
-
-    /*
-    * Time of last heard message (in millis, Unix epoch)
-    */
-    fixed32 rx_time = 3;
-  }
-  /*
   * The list of neighbors
   */
   repeated Neighbor neighbors = 4;
+}
+
+/*
+* A single edge in the mesh
+*/
+message Neighbor {
+  /*
+  * Node ID of neighbor
+  */
+  uint32 node_id = 1;
+
+  /*
+  * SNR of last heard message
+  */
+  float snr = 2;
+
+  /*
+  * Time of last heard message (in millis, Unix epoch)
+  */
+  fixed32 rx_time = 3;
 }

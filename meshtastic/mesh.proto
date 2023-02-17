@@ -868,13 +868,12 @@ message MeshPacket {
    */
   Delayed delayed = 13;
 
-    /*
+  /*
    * Sender information used by NeighborInfo Module to get edge info on the mesh.
    * This is stored in each node's nodeDB so we'll have a SNR per edge when we sniff packets.
    * This field should disabled (always zeroed) unless user opts in.
    */
    uint32 last_sent_by_ID = 14;
-
 }
 
 /*
@@ -973,11 +972,6 @@ message NodeInfo {
    * The latest device metrics for the node.
    */
   DeviceMetrics device_metrics = 6;
-
-  /*
-  * Stores last sent by info in the nodeDB; used by NeighborInfo module
-  */
-  uint32 last_sent_by_ID = 7; 
 
 }
 
