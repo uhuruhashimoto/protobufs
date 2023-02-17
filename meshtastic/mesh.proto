@@ -973,6 +973,12 @@ message NodeInfo {
    * The latest device metrics for the node.
    */
   DeviceMetrics device_metrics = 6;
+
+  /*
+  * Stores last sent by info in the nodeDB; used by NeighborInfo module
+  */
+  uint32 last_sent_by_ID = 7; 
+
 }
 
 /*
