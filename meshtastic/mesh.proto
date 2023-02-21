@@ -972,7 +972,6 @@ message NodeInfo {
    * The latest device metrics for the node.
    */
   DeviceMetrics device_metrics = 6;
-
 }
 
 /*
